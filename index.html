@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tensor Mistral — Markov Muse</title><link rel="stylesheet" href="style.css"></head><body>
+<header><h1>✒ tensor mistral</h1><nav class="lang"><button data-lang="en" class="on">EN</button><button data-lang="de">DE</button></nav></header>
+<main><aside class="panel">
+<section><h2 data-i="controls">Controls</h2><div class="btncol">
+<button id="gen" class="primary" data-i="gen">✦ Generate</button></div></section>
+<section><h2 data-i="params">Parameters</h2>
+<label><span data-i="corpus">Corpus</span><select id="corpus"><option value="en">english</option><option value="de">deutsch</option></select></label>
+<label><span data-i="length">Length</span><input type="range" id="length" min="10" max="200" value="60"></label>
+<label><span data-i="temp">Creativity</span><input type="range" id="temp" min="0.1" max="2" step="0.1" value="0.8"></label></section>
+<section class="stats"><span data-i="words">Words</span> <b id="wc">0</b></section>
+</aside><div class="stage"><div class="out" id="out"><p class="placeholder" data-i="placeholder">press generate — a python markov chain writes for you</p></div></div></main>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js"></script>
+<script src="app.js"></script></body></html>
